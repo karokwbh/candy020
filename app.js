@@ -3,7 +3,7 @@
 // 題目：檢查字串的 x 跟 o 的數量是不是一樣多，不分大小寫
 
 function xxoo(str) {
-  // 實作寫在這裡
+  return [...str].filter((x) => x.toLowerCase() === "o").length === [...str].filter((x) => x.toLowerCase() === "x").length
 }
 
 console.log(xxoo("ooxx")) // true
